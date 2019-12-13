@@ -23,6 +23,13 @@ useEffect(() => {
                 key = {characters.id}
                 name = {characters.name}
                 height = {characters.height}
+                mass = {characters.mass}
+                hair = {characters.hair_color}
+                skin = {characters.skin_color}
+                eyes = {characters.eye_color}
+                birthyear = {characters.birth_year}
+                gender = {characters.gender}
+                homeworld = {characters.homeworld}
                 />
             );
         })}
