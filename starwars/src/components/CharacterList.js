@@ -1,0 +1,31 @@
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import CharactersCard from './CharactersCard';
+
+export default function CharacterList() {
+    const [people, setPeople] = useState([]);
+useEffect(() => {
+    axios
+    .get('https://swapi.co/api/people/')
+    .then(response => {
+      console.log(response);
+      setPeople(response.data.results);
+    })
+    .catch(error => {
+      console.log("data not returned", error);
+    });
+    }, []);
+    return (
+        <div>
+        {people.map(characters => {
+            return (
+                <CharactersCard
+                key = {characters.id}
+                name = {characters.name}
+                height = {characters.height}
+                />
+            );
+        })}
+        </div>
+    );
+}
