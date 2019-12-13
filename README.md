@@ -26,13 +26,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a UI library created by Facebook that is used to create much richer interfaces. It tries to solve the problem of constantly having to load and reload a ton of components by making sure that only the ones that have changed get updated. It also makes code a lot cleaner as we don't have to go through the long process of creating a component in vanilla JS, which takes many lines of code for one.
+
 - [ ] What does it mean to _think_ in react?
 
 - [ ] Describe state.
 
+State is basically just another word for data. It means the current status of our webpage or elements of a webpage. For instance, a boolean has two possible states: true or false.
+
 - [ ] Describe props.
 
+Props are, in a way, variables. They allow us to take data from one component and pass it to another one without having to write out the data again.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+
 
 ## Project Set Up
 
